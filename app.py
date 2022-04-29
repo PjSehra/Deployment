@@ -16,6 +16,7 @@ from flask import request, jsonify, Flask
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
+
 Customer = [
     {'customer_id': 0,
      'name': 'Pj',
@@ -210,7 +211,7 @@ animal.append(animaldict4)
 @app.route('/', methods=['GET'])    #tell which HTTP method we are using (GET) and what route (extra bit of the URL) this method will be activated on.  In this case nothing and so home
 def home():
     
-    title= "<h1>Welcome to Gareth's virtual lesson</h1><p>Sorry I am still ill.</p>" #what the api returns
+    title= "<h1>CHANGE WELCOME to Gareth's virtual lesson</h1><p>Sorry I am still ill.</p>" #what the api returns
     return title
 
 # A route to return all of the available entries in our collection of pet owners.
